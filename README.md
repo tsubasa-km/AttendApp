@@ -4,6 +4,8 @@
 
 アプリを実行するとタスクトレイに常駐し、自動で出席登録をします。
 
+※初回の実行はログイン情報の入力が求められます。
+
 ## 使い方
 
 [最新のリリース](https://github.com/tsubasa-km/AttendApp/releases/tag/v1.0.0)をダウンロード。(exeまたはzip)
