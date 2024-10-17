@@ -6,7 +6,7 @@
 
 ## 使い方
 
-最新のリリースをダウンロード。(exeまたはzip)
+[最新のリリース](https://github.com/tsubasa-km/AttendApp/releases/tag/v1.0.0)をダウンロード。(exeまたはzip)
 
 ### 完全自動化
 
