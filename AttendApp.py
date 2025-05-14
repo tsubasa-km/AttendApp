@@ -44,8 +44,8 @@ def attend() -> bool:
         return False
     auth_data_list = re.findall("'(.*?)'", auth_raws[0]["onclick"])
     data = {
-        "lat": "35.4680832",
-        "lng": "139.5195904",
+        "lat": "35.46391397024158",
+        "lng": "139.51350417569222",
         "error": "",
         "setPeriod": auth_data_list[0],
         "setFramejudgment": auth_data_list[1],
