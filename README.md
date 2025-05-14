@@ -8,7 +8,7 @@
 
 ## 使い方
 
-[最新のリリース](https://github.com/tsubasa-km/AttendApp/releases/tag/v1.0.0)をダウンロード。(exeまたはzip)
+[最新のリリース](https://github.com/tsubasa-km/AttendApp/releases/tag/v1.0.0)をダウンロード。(exe または zip)
 
 ログイン情報を保存したら、ログイン情報登録ウィンドウは閉じても問題ありません。
 
@@ -22,6 +22,18 @@
 
 ### 完全自動化
 
-1. 任意のフォルダにexeを配置。
+1. 任意のフォルダに exe を配置。
 2. `Win + R`で「ファイル名を指定して実行」に`shell:startup`を入力してスタートアップフォルダを開く。
-3. スタートアップフォルダにAttendApp.exeのショートカットを配置。
+3. スタートアップフォルダに AttendApp.exe のショートカットを配置。
+
+## 開発
+
+### ビルド
+
+```
+pip install pyinstaller
+```
+
+```
+pyinstaller -F -w --clean --icon=icon.ico AttendApp.py
+```
