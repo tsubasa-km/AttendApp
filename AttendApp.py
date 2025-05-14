@@ -154,7 +154,14 @@ def deamon(task):
     def on_quit(icon, item):
         icon.stop()
         sys.exit()
-    icon_image = Image.open(resource_path("icon.ico"))
+    
+    # アイコンファイルの読み込みを試行し、失敗した場合は単色アイコンを生成
+    try:
+        icon_image = Image.open(resource_path("icon.ico"))
+    except FileNotFoundError:
+        # アイコンが見つからない場合、単色の黒い正方形のアイコンを生成
+        icon_image = Image.new('RGB', (64, 64), color = 'black')
+    
     icon = pystray.Icon("test_icon")
     icon.icon = icon_image
     icon.menu = pystray.Menu(item('Quit', on_quit),

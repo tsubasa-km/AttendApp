@@ -1,5 +1,4 @@
 *.pickle
-*.spec
 __pycache__
 .vscode
 build
