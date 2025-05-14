@@ -35,5 +35,5 @@ pip install pyinstaller
 ```
 
 ```
-pyinstaller -F -w --clean --icon=icon.ico AttendApp.py
+pyinstaller AttendApp.spec
 ```

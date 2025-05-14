@@ -5,7 +5,7 @@ a = Analysis(
     ['AttendApp.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('icon.ico', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

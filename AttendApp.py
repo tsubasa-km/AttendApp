@@ -155,12 +155,7 @@ def deamon(task):
         icon.stop()
         sys.exit()
     
-    # アイコンファイルの読み込みを試行し、失敗した場合は単色アイコンを生成
-    try:
-        icon_image = Image.open(resource_path("icon.ico"))
-    except FileNotFoundError:
-        # アイコンが見つからない場合、単色の黒い正方形のアイコンを生成
-        icon_image = Image.new('RGB', (64, 64), color = 'black')
+    icon_image = Image.open(resource_path("icon.ico"))
     
     icon = pystray.Icon("test_icon")
     icon.icon = icon_image
